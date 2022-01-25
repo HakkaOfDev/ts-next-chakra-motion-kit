@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/hakkaofdev/typescript-chakraui-framermotion-kit">
+  <a href="https://github.com/hakkaofdev/ts-next-chakra-motion-kit">
     <h1 align="center">Typescript Chakra-UI Framer-Motion Starter Kit</h1>
   </a>
 </p>
@@ -9,8 +9,10 @@
 <br>
 
 <p align="center">
-  <img alt="Github Stars" src="https://badgen.net/github/stars/hakkaofdev/typescript-chakraui-framermotion-kit"/>
-  <img alt="Top languages" src="https://img.shields.io/github/languages/top/hakkaofdev/typescript-chakraui-framermotion-kit"/>
+  <img alt="Github Stars" src="https://badgen.net/github/stars/hakkaofdev/ts-next-chakra-motion-kit"/>
+  <img alt="Code quality" src="https://api.codiga.io/project/30800/score/svg"/>
+  <img alt="Code grade" src="https://api.codiga.io/project/30800/status/svg"/>
+  <img alt="Top languages" src="https://img.shields.io/github/languages/top/hakkaofdev/ts-next-chakra-motion-kit"/>
   <img alt="Opensource License" src="https://img.shields.io/badge/licence-OPENSOURCE-green"/>
 </p>
 <br />
@@ -31,13 +33,13 @@
 First, you need to open a `Terminal` and clone this repo by using :
 
 ```bash
-git clone https://github.com/hakkaofdev/typescript-chakraui-framermotion-kit
+git clone https://github.com/hakkaofdev/ts-next-chakra-motion-kit
 ```
 
 Enter to the folder :
 
 ```bash
-cd ./typescript-chakraui-framermotion-kit
+cd ./ts-next-chakra-motion-kit
 ```
 
 And install dependencies :
@@ -118,7 +120,7 @@ By default, I installed a list of useful dependencies.
 - `react-intersection-observer` in `v8.33.1` for advanced animations. You can find an example of use [here](https://github.com/HakkaOfDev/hakkaofdev.fr/blob/main/src/components/scene/index.tsx).
 - `prettier` in `v2.5.1` for formatting code.
 - `eslint` in `v8.7.0` for errors.
-- `react-country-flag` in `v3.0.2` for flags. Example [here](https://github.com/HakkaOfDev/typescript-chakraui-framermotion-kit/blob/main/src/components/languages-button/index.tsx).
+- `react-country-flag` in `v3.0.2` for flags. Example [here](https://github.com/HakkaOfDev/ts-next-chakra-motion-kit/blob/main/src/components/languages-button/index.tsx).
 - `@react-icons/all-files` in `v4.1.0` for icons. [React-Icons](https://react-icons.github.io/react-icons/)
 - `Fonts` to [fontsource.org](https://fontsource.org/fonts).
 
