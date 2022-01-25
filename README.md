@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/hakkaofdev/ts-next-chakra-motion-kit">
-    <h1 align="center">Typescript Chakra-UI Framer-Motion Starter Kit</h1>
+    <h1 align="center">Typescript Next.js Chakra-UI Framer-Motion Starter Kit</h1>
   </a>
 </p>
 
@@ -27,6 +27,10 @@
 - Theme
 - Framer Motion
 - SEO
+
+<br />
+
+### See a DEMO [here](https://ts-next-chakra-motion-kit.vercel.app/).
 
 <h2 align='center'>Getting started</h2>
 
