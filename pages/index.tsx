@@ -22,7 +22,7 @@ const IndexPage = () => {
   const { t } = useTranslation();
 
   return (
-    <PageLayout title='Home'>
+    <PageLayout title='Home' description='Discover a starter kit which includes Next.js, Chakra-UI, Framer-Motion in Typescript. You have few components, Internationalization, SEO and more in this template ! Enjoy coding.'>
       <Stack
         spacing={4}
         py={12}
