@@ -46,10 +46,10 @@ Enter to the folder :
 cd ./ts-next-chakra-motion-kit
 ```
 
-And install dependencies :
+And install dependencies (don't forget `--force` to force dependencies react 18):
 
 ```bash
-npm install
+npm install --force
 ```
 
 Finally, run in dev :
