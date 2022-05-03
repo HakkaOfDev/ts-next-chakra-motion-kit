@@ -89,7 +89,6 @@ const IndexPage = () => {
           <Image
             src='/assets/images/home.jpg'
             h={500}
-            layout='fill'
             fit='cover'
             fallback={<Skeleton w={{ base: '100%', md: '50%' }} h={500} />}
           />

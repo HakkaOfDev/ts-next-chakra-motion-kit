@@ -1,4 +1,4 @@
-import { TypeExample } from "@/types/type-example";
+import { TypeExample } from '@/types/type-example';
 
 export const dataExample: TypeExample[] = [
   {
@@ -7,5 +7,5 @@ export const dataExample: TypeExample[] = [
     description: 'Description 1',
     createdAt: new Date(),
     updatedAt: new Date(),
-  }
+  },
 ];
