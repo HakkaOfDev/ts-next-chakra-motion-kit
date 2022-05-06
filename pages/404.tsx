@@ -8,7 +8,7 @@ const NotFoundPage = () => {
       <VStack spacing={2} justify='center' h='100vh'>
         <Heading>404 Not found</Heading>
         <Divider />
-        <Text>The page you're looking for was not found.</Text>
+        <Text>The page you&apos;re looking for was not found.</Text>
         <NextLink href='/' passHref>
           <Button colorScheme='brand' size='md'>
             Return to home
