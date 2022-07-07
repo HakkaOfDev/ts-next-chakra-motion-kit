@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ts-next-chakra-motion-kit.vercel.app/
+
+# Sitemaps
+Sitemap: https://ts-next-chakra-motion-kit.vercel.app/sitemap.xml

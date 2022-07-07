@@ -13,9 +13,9 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react';
-import { FiExternalLink } from '@react-icons/all-files/fi/FiExternalLink';
-import { ImSphere } from '@react-icons/all-files/im/ImSphere';
 import { Trans, useTranslation } from 'react-i18next';
+import { FiExternalLink } from 'react-icons/fi';
+import { ImSphere } from 'react-icons/im';
 import { GITHUB_PROFILE, WEBSITE } from 'src/constants';
 
 const IndexPage = () => {
@@ -91,6 +91,7 @@ const IndexPage = () => {
             h={500}
             fit='cover'
             fallback={<Skeleton w={{ base: '100%', md: '50%' }} h={500} />}
+            alt=''
           />
         </Center>
       </Stack>

@@ -4,9 +4,9 @@ import {
   useColorMode,
   useColorModeValue as mode,
 } from '@chakra-ui/react';
-import { BsMoon } from '@react-icons/all-files/bs/BsMoon';
-import { WiDaySunny } from '@react-icons/all-files/wi/WiDaySunny';
 import { AnimatePresence, motion, Variants } from 'framer-motion';
+import { BsMoon } from 'react-icons/bs';
+import { WiDaySunny } from 'react-icons/wi';
 
 const variants: Variants = {
   initial: {

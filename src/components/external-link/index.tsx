@@ -4,7 +4,7 @@ import {
   LinkProps,
   useColorModeValue as mode,
 } from '@chakra-ui/react';
-import { FiExternalLink } from '@react-icons/all-files/fi/FiExternalLink';
+import { FiExternalLink } from 'react-icons/fi';
 
 const ExternalLink = ({ children, ...linkProps }: LinkProps) => {
   return (
