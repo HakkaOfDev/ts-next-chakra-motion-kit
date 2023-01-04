@@ -46,10 +46,10 @@ Enter to the folder :
 cd ./ts-next-chakra-motion-kit
 ```
 
-And install dependencies (don't forget `--force` to force dependencies react 18):
+And install dependencies
 
 ```bash
-npm install --force
+npm install
 ```
 
 Finally, run in dev :
@@ -120,12 +120,11 @@ Each imports refer to the specific folder.
 
 By default, I installed a list of useful dependencies.
 
-- `react-use` in `v17.3.2` for useful hooks.
-- `react-intersection-observer` in `v8.33.1` for advanced animations. You can find an example of use [here](https://github.com/HakkaOfDev/hakkaofdev.fr/blob/main/src/components/scene/index.tsx).
-- `prettier` in `v2.5.1` for formatting code.
-- `eslint` in `v8.7.0` for errors.
-- `react-country-flag` in `v3.0.2` for flags. Example [here](https://github.com/HakkaOfDev/ts-next-chakra-motion-kit/blob/main/src/components/languages-button/index.tsx).
-- `@react-icons/all-files` in `v4.1.0` for icons. [React-Icons](https://react-icons.github.io/react-icons/)
+- `react-use` in `v17.4.0` for useful hooks.
+- `react-intersection-observer` in `v9.4.1` for advanced animations. You can find an example of use [here](https://github.com/HakkaOfDev/hakkaofdev.fr/blob/main/src/components/scene/index.tsx).
+- `prettier` in `v2.8.1` for formatting code.
+- `eslint` in `v8.31.0` for errors.
+- `@react-icons` in `v4.7.1` for icons. [React-Icons](https://react-icons.github.io/react-icons/)
 - `Fonts` to [fontsource.org](https://fontsource.org/fonts).
 
 <h2 align='center'>Components</h2>
@@ -152,11 +151,24 @@ const resources = {
 
 export const availableLanguages = Object.keys(resources);
 
-i18n.use(initReactI18next).init({
-  fallbackLng: 'us',
-  lng: 'us',
-  resources,
-});
+const options = {
+  order: ['localStorage', 'navigator'],
+};
+
+i18n
+  .use(XHR)
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources,
+    fallbackLng: 'us',
+    detection: options,
+    supportedLngs: ['us', 'fr'],
+    interpolation: {
+      escapeValue: false,
+    },
+    debug: false,
+  });
 ```
 
 ### Add a new lang
@@ -323,4 +335,4 @@ module.exports = {
 
 You have to `npm run postbuild` to generate it.
 
-> Don't hesistate to contact me if you want advices or if you have any questions or post an issues.
+> Don't hesitate to contact me if you want advices or if you have any questions or post an issue.

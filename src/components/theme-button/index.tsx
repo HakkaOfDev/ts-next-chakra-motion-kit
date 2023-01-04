@@ -44,7 +44,7 @@ const ThemeButton = () => {
   const { toggleColorMode } = useColorMode();
 
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence mode='wait'>
       <MotionIconButton
         aria-label='Toggle color mode'
         size='lg'

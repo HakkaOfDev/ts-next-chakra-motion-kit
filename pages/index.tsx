@@ -42,22 +42,18 @@ const IndexPage = () => {
         >
           <Heading as='h1'>Alexandre GOSSARD</Heading>
           <Divider />
+
           <Text color='gray.500' align='justify'>
             <Trans i18nKey='excerpt'>
-              <strong>Student</strong>
-              by day,
-              <strong>mad developer</strong>
-              by night. Passionate about computer science and
-              <strong>new technologies</strong>, currently
-              <ExternalLink href='https://nextjs.org/'>
-                Next.js
-              </ExternalLink>&{' '}
+              <strong>Student</strong> by day, <strong>mad developer</strong> by
+              night. Passionate about computer science and{' '}
+              <strong>new technologies</strong>, currently{' '}
+              <ExternalLink href='https://nextjs.org/'>Next.js</ExternalLink> &{' '}
               <ExternalLink href='https://chakra-ui.com/'>
                 Chakra UI
               </ExternalLink>
               , I develop in order to propose different{' '}
-              <strong>opensource</strong>
-              contents.
+              <strong>opensource</strong> contents.
             </Trans>
           </Text>
           <HStack

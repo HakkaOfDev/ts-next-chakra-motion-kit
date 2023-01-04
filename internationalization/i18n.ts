@@ -1,7 +1,9 @@
+import { en_US } from '@/internationalization/locales/en/en_US';
+import { fr_FR } from '@/internationalization/locales/fr/fr_FR';
 import i18n from 'i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import XHR from 'i18next-http-backend';
 import { initReactI18next } from 'react-i18next';
-import { en_US } from './locales/en/en_US';
-import { fr_FR } from './locales/fr/fr_FR';
 
 const resources = {
   us: {
@@ -14,10 +16,24 @@ const resources = {
 
 export const availableLanguages = Object.keys(resources);
 
-i18n.use(initReactI18next).init({
-  fallbackLng: 'us',
-  lng: 'us',
-  resources,
-});
+const options = {
+  order: ['localStorage', 'navigator'],
+  caches: ['localStorage'],
+};
+
+i18n
+  .use(XHR)
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources,
+    fallbackLng: 'en',
+    detection: options,
+    supportedLngs: ['en', 'fr'],
+    interpolation: {
+      escapeValue: false,
+    },
+    debug: false,
+  });
 
 export default i18n;

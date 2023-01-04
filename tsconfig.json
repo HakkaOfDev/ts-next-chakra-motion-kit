@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -25,6 +25,6 @@
     },
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/404.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/404.tsx", "next-i18next.config.mjs", "next-sitemap.js"],
   "exclude": ["node_modules"]
 }
