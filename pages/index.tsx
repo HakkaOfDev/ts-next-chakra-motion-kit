@@ -3,20 +3,30 @@ import PageLayout from '@/components/page-layout';
 import {
   Button,
   Center,
+  chakra,
   Divider,
   Heading,
   HStack,
-  Image,
   Link,
   Skeleton,
   Stack,
   Text,
   VStack,
 } from '@chakra-ui/react';
+import NextImage from 'next/image';
 import { Trans, useTranslation } from 'react-i18next';
 import { FiExternalLink } from 'react-icons/fi';
 import { ImSphere } from 'react-icons/im';
 import { GITHUB_PROFILE, WEBSITE } from 'src/constants';
+
+const CustomImage = chakra(NextImage, {
+  baseStyle: {
+    borderRadius: 'lg',
+    boxShadow: 'lg',
+  },
+  shouldForwardProp: (prop) =>
+    ['src', 'alt', 'width', 'height'].includes(prop),
+});
 
 const IndexPage = () => {
   const { t } = useTranslation();
@@ -82,12 +92,11 @@ const IndexPage = () => {
           </HStack>
         </VStack>
         <Center w={{ base: '100%', md: '50%' }}>
-          <Image
+          <CustomImage
             src='/assets/images/home.jpg'
-            h={500}
-            fit='cover'
-            fallback={<Skeleton w={{ base: '100%', md: '50%' }} h={500} />}
-            alt=''
+            width={300}
+            height={500}
+            alt='Cover Image'
           />
         </Center>
       </Stack>
